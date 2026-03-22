@@ -57,12 +57,11 @@ if (form) {
     btn.textContent = 'Sending...';
     btn.disabled = true;
 
-    // Replace the action URL with your Formspree endpoint
-    const data = new FormData(form);
-    fetch(form.action, {
+    const data = new URLSearchParams(new FormData(form)).toString();
+    fetch('/', {
       method: 'POST',
-      body: data,
-      headers: { 'Accept': 'application/json' }
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: data
     })
     .then(response => {
       if (response.ok) {
