@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Text: Clarys -->
+  <text x="40" y="78" font-family="'Inter', sans-serif" font-weight="700" font-size="52" fill="#1a1a2e" letter-spacing="-0.5">Clarys</text>
+
+  <!-- Text: Systems -->
+  <text x="42" y="118" font-family="'Inter', sans-serif" font-weight="400" font-size="30" fill="#0D7377" letter-spacing="5">SYSTEMS</text>
+
+  <!-- Hexagon icon — matching gap to original (~40px from text to icon edge) -->
+  <g transform="translate(350, 80)">
+    <!-- Hexagon outline -->
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30"
+             fill="none" stroke="#0D7377" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Internal cross-lines (all vertices connected through center) -->
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="#B8D8D9" stroke-width="2"/>
+    <line x1="52" y1="-30" x2="-52" y2="30" stroke="#B8D8D9" stroke-width="2"/>
+    <line x1="52" y1="30" x2="-52" y2="-30" stroke="#B8D8D9" stroke-width="2"/>
+
+    <!-- Additional cross-lines (adjacent vertex connections through interior) -->
+    <line x1="0" y1="-60" x2="52" y2="30" stroke="#D4E6E7" stroke-width="1.5"/>
+    <line x1="0" y1="-60" x2="-52" y2="30" stroke="#D4E6E7" stroke-width="1.5"/>
+    <line x1="52" y1="-30" x2="0" y2="60" stroke="#D4E6E7" stroke-width="1.5"/>
+    <line x1="52" y1="-30" x2="-52" y2="30" stroke="#D4E6E7" stroke-width="1.5"/>
+    <line x1="-52" y1="-30" x2="0" y2="60" stroke="#D4E6E7" stroke-width="1.5"/>
+    <line x1="-52" y1="-30" x2="52" y2="30" stroke="#D4E6E7" stroke-width="1.5"/>
+
+    <!-- Center dot — orange -->
+    <circle cx="0" cy="0" r="12" fill="#E8963A"/>
+
+    <!-- Vertex nodes -->
+    <!-- Dark teal nodes -->
+    <circle cx="0" cy="-60" r="7" fill="#0D7377"/>
+    <circle cx="52" cy="-30" r="7" fill="#0D7377"/>
+    <circle cx="52" cy="30" r="7" fill="#0D7377"/>
+    <!-- Light teal nodes -->
+    <circle cx="0" cy="60" r="7" fill="#7ECACD"/>
+    <circle cx="-52" cy="30" r="7" fill="#7ECACD"/>
+    <circle cx="-52" cy="-30" r="7" fill="#7ECACD"/>
+  </g>
+</svg>
