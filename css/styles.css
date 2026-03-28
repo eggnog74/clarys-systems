@@ -456,6 +456,20 @@ p {
   flex-shrink: 0;
 }
 
+/* ===== AI APPROACH (Home) ===== */
+.ai-approach {
+  max-width: 720px;
+}
+
+.ai-approach h2 {
+  margin-bottom: 1.5rem;
+}
+
+.ai-approach p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
 /* ===== CTA BANNER ===== */
 .cta-banner {
   padding: 80px 0;
