@@ -177,18 +177,17 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 110px;
 }
 
 .nav-logo {
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: var(--color-text);
-  letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.nav-logo span {
-  color: var(--color-accent);
+.nav-logo img {
+  height: 90px;
+  width: auto;
 }
 
 .nav-links {
@@ -277,7 +276,7 @@ p {
 
 /* ===== HERO SECTIONS ===== */
 .hero {
-  padding: 160px 0 100px;
+  padding: 200px 0 100px;
   min-height: 70vh;
   display: flex;
   align-items: center;
@@ -308,7 +307,7 @@ p {
 
 /* Page-level heroes (smaller) */
 .hero-page {
-  padding: 160px 0 80px;
+  padding: 200px 0 80px;
   min-height: auto;
 }
 
