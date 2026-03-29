@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Case Study — Clarys Systems</title>
-  <meta name="description" content="How we automated operations for a US military AV contractor, saving 400+ hours per year and deploying systems used in Pentagon installations.">
-  <meta property="og:title" content="Case Study: Automating Operations for a US Military AV Contractor">
-  <meta property="og:description" content="400+ hours saved per year. Systems deployed in Pentagon installations.">
+  <title>Case Study: Class Scheduling Automation — Clarys Systems</title>
+  <meta name="description" content="How we built a custom scheduling system for a performing arts college in Germany, enabling 3x growth and saving 10 hours per week.">
+  <meta property="og:title" content="Case Study: Automating Class Scheduling for a Performing Arts College">
+  <meta property="og:description" content="3x growth enabled. 10 hours saved per week. Curriculum database still in use today.">
   <meta property="og:type" content="article">
   <meta property="og:image" content="og-image.png">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -38,7 +38,7 @@
     <div class="container">
       <div class="hero-content fade-up">
         <p class="label">Case Study</p>
-        <h1>Automating Operations for a US Military AV Contractor</h1>
+        <h1>Automating Class Scheduling for a Performing Arts College</h1>
       </div>
     </div>
   </section>
@@ -59,20 +59,20 @@
             </thead>
             <tbody>
               <tr>
-                <td>Time saved per project</td>
-                <td>1&ndash;2 hours per Model</td>
+                <td>Weekly time saved</td>
+                <td>~10 hours of manual scheduling work eliminated</td>
               </tr>
               <tr>
-                <td>Annual volume</td>
-                <td>Hundreds of projects per year</td>
+                <td>Growth enabled</td>
+                <td>School scaled to 3&times; its original size</td>
               </tr>
               <tr>
-                <td>Estimated annual savings</td>
-                <td>200&ndash;400+ labour hours ($12,000&ndash;$23,000+)</td>
+                <td>Schedule distribution</td>
+                <td>Automated to all students and teachers via portal + email</td>
               </tr>
               <tr>
-                <td>Reliability</td>
-                <td>System used for Pentagon installations</td>
+                <td>Curriculum database</td>
+                <td>Still in active use today</td>
               </tr>
             </tbody>
           </table>
@@ -80,22 +80,23 @@
 
         <h2 class="fade-up">The Challenge</h2>
         <div class="fade-up">
-          <p>A major US-based audiovisual integration company — contracted to install AV systems in high-security government facilities including the Pentagon — was struggling with its project documentation workflow.</p>
-          <p>Each project required a detailed Excel workbook (called a "Model") containing quotes, cost breakdowns, bills of materials, and room-by-room summaries. Large projects could involve 26 or more rooms, each requiring its own set of tabs with cross-referenced data.</p>
-          <p>The team had no efficient way to produce system design drawings and was manually copying and pasting data between tabs, building summaries by hand, and reconciling costs across dozens of rooms for every project. This process was slow, error-prone, and consumed hours of skilled labour per project.</p>
+          <p>A performing arts college in Germany with around 300 students and a dozen teachers had been managing their class scheduling by hand in Excel. For years, this worked fine — the school was small enough that one person could map it all out manually.</p>
+          <p>But the school was growing. Multiple year groups, overlapping teacher availability, room assignments, and an increasingly complex curriculum made manual scheduling unsustainable. Each new term meant days of painstaking spreadsheet work, and mistakes — double-bookings, missed classes, scheduling conflicts — were becoming more frequent.</p>
+          <p>They evaluated off-the-shelf scheduling software, but found it too rigid and cumbersome. A performing arts curriculum doesn't fit neatly into the templates that standard school software assumes. They needed something built around the way their school actually operates.</p>
         </div>
 
         <h2 class="fade-up">The Solution</h2>
         <div class="fade-up">
-          <p>I was brought in and took a full-stack approach to the problem:</p>
-          <p><strong>Design capability:</strong> Learned D-Tools (industry-standard AV design software) to enable the company to produce proper system design drawings exported to Visio.</p>
-          <p><strong>Data pipeline:</strong> Created custom export files to bridge D-Tools output into the Excel Model format, eliminating the manual data transfer bottleneck.</p>
-          <p><strong>Model automation:</strong> Built comprehensive Excel macros that automated the population of room tabs, cost summaries, BOMs, quotes, and accounting data across the entire workbook. What previously required manual cut-and-paste across dozens of tabs now ran with a single command.</p>
+          <p>I built a custom web application, hosted on a dedicated server, that replaced the entire spreadsheet-based workflow:</p>
+          <p><strong>Automated schedule generation:</strong> The system handled the complex logic of assigning classes across multiple year groups while respecting teacher availability and room constraints — work that previously took days of manual effort.</p>
+          <p><strong>Schedule distribution:</strong> Once generated, schedules were published through a portal and automatically emailed to both students and teachers. No more printing, no more chasing people down with updates.</p>
+          <p><strong>Teacher hours tracking:</strong> The system logged hours per class and per teacher, giving the school accurate data for labour cost estimation and budgeting — replacing guesswork with real numbers.</p>
+          <p><strong>Curriculum database:</strong> A persistent record of what each teacher taught, per subject, per year. This gave the school a living knowledge base of their curriculum history — still in active use today.</p>
         </div>
 
         <div class="takeaway fade-up">
           <h2>Key Takeaway</h2>
-          <p>This project demonstrates the approach I apply to every business I work with: identify the repetitive, manual processes that consume skilled workers' time, then build systems that automate them. The tools have evolved since this project — AI now makes it possible to automate far more, far faster — but the approach remains the same. Understand the operation, find the bottleneck, build the system, and give people their time back.</p>
+          <p>This is a textbook case of a system that worked — until growth broke it. The school didn't need software when they were small. But what was manageable for 100 students became impossible for 300. Rather than forcing them into generic scheduling software that didn't fit their curriculum, we built exactly what they needed. The result: a system that removed the bottleneck, enabled the school to keep growing, and is still serving them today.</p>
         </div>
 
         <div class="text-center fade-up mt-4">
