@@ -16,38 +16,43 @@
 </head>
 <body>
 
-  <!-- LANGUAGE TOGGLE -->
-  <div class="lang-toggle">
-    <button class="lang-btn active" data-lang="en">EN</button>
-    <button class="lang-btn" data-lang="nl">NL</button>
-  </div>
-
   <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-inner container">
       <a href="#" class="nav-brand"><img src="logo-clarys-dark.svg" alt="Clarys Systems" class="nav-logo"></a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="#services">
-          <span data-lang-en>Services</span>
-          <span data-lang-nl>Diensten</span>
-        </a>
-        <a href="#how">
-          <span data-lang-en>How it works</span>
-          <span data-lang-nl>Werkwijze</span>
-        </a>
-        <a href="#proof">
-          <span data-lang-en>Results</span>
-          <span data-lang-nl>Resultaten</span>
-        </a>
-        <a href="#contact" class="nav-cta">
-          <span data-lang-en>Let's talk</span>
-          <span data-lang-nl>Neem contact op</span>
-        </a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#services">
+            <span data-lang-en>Services</span>
+            <span data-lang-nl>Diensten</span>
+          </a>
+          <a href="#how">
+            <span data-lang-en>How it works</span>
+            <span data-lang-nl>Werkwijze</span>
+          </a>
+          <a href="#proof">
+            <span data-lang-en>Results</span>
+            <span data-lang-nl>Resultaten</span>
+          </a>
+          <a href="#contact" class="nav-cta">
+            <span data-lang-en>Let's talk</span>
+            <span data-lang-nl>Neem contact op</span>
+          </a>
+          <div class="lang-toggle">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="nl">NL</button>
+          </div>
+        </div>
+        <div class="lang-toggle lang-toggle-mobile">
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="nl">NL</button>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    <div class="nav-overlay"></div>
   </nav>
 
   <!-- HERO -->

@@ -11,8 +11,10 @@
   langBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const lang = btn.dataset.lang;
-      langBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+      // Update ALL lang buttons (both desktop and mobile toggles)
+      langBtns.forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === lang);
+      });
       if (lang === 'nl') {
         document.body.classList.add('lang-nl');
         document.documentElement.lang = 'nl';
@@ -40,20 +42,51 @@
   // --- Mobile menu ---
   const toggle = document.querySelector('.nav-toggle');
   const links = document.querySelector('.nav-links');
+  const overlay = document.querySelector('.nav-overlay');
+
+  function closeMenu() {
+    toggle.classList.remove('open');
+    links.classList.remove('open');
+    if (overlay) overlay.classList.remove('open');
+    nav.classList.remove('nav-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  function openMenu() {
+    toggle.classList.add('open');
+    links.classList.add('open');
+    if (overlay) overlay.classList.add('open');
+    nav.classList.add('nav-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
 
   if (toggle && links) {
     toggle.addEventListener('click', () => {
-      const open = toggle.classList.toggle('open');
-      links.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', open);
+      const isOpen = toggle.classList.contains('open');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
+    // Close menu when clicking a nav link
     links.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
-        toggle.classList.remove('open');
-        links.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      });
+      a.addEventListener('click', closeMenu);
+    });
+
+    // Close menu when clicking the overlay
+    if (overlay) {
+      overlay.addEventListener('click', closeMenu);
+    }
+
+    // Close menu on Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && toggle.classList.contains('open')) {
+        closeMenu();
+      }
     });
   }
 

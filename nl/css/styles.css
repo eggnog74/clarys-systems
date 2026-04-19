@@ -54,16 +54,15 @@ img { max-width: 100%; height: auto; }
 
 /* --- Language Toggle --- */
 .lang-toggle {
-  position: fixed;
-  top: 20px;
-  right: 24px;
-  z-index: 1000;
   display: flex;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: 100px;
   padding: 3px;
-  backdrop-filter: blur(20px);
+}
+
+.lang-toggle-mobile {
+  display: none;
 }
 
 .lang-btn {
@@ -117,6 +116,11 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
   box-shadow: 0 1px 0 var(--border);
 }
 
+.nav.nav-open {
+  background: var(--bg-secondary);
+  backdrop-filter: none;
+}
+
 .nav-inner {
   display: flex;
   align-items: center;
@@ -134,6 +138,12 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
 .nav-logo {
   height: 44px;
   width: auto;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
 .nav-links {
@@ -676,30 +686,64 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
 .stagger > .fade-up:nth-child(3) { transition-delay: 0.2s; }
 .stagger > .fade-up:nth-child(4) { transition-delay: 0.3s; }
 
+/* --- Nav Overlay --- */
+.nav-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 98;
+}
+
+.nav-overlay.open {
+  display: block;
+}
+
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .nav-links { display: none; }
-  .nav-toggle { display: flex; }
-
-  .nav-links.open {
-    display: flex;
+  .nav-links {
+    display: none;
     flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     width: 280px;
+    background: #16161d;
     background: var(--bg-secondary);
     padding: 80px 32px 32px;
     gap: 24px;
     border-left: 1px solid var(--border);
     z-index: 99;
+    box-shadow: -4px 0 24px rgba(0, 0, 0, 0.4);
+  }
+
+  .nav-links .lang-toggle {
+    display: none;
+  }
+
+  .nav-links a {
+    font-size: 16px;
+    color: var(--text-primary);
+  }
+
+  .nav-links.open {
+    display: flex;
     animation: slideIn 0.3s ease;
   }
 
   @keyframes slideIn {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
+  }
+
+  .nav-toggle { display: flex; }
+
+  .lang-toggle-mobile {
+    display: flex;
   }
 
   .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
@@ -731,11 +775,6 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
     flex-direction: column;
     gap: 16px;
     text-align: center;
-  }
-
-  .lang-toggle {
-    top: 16px;
-    right: 64px;
   }
 }
 
