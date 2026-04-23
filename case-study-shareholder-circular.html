@@ -12,44 +12,44 @@
   <link rel="icon" href="logo-clarys-dark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="logo-clarys-systems.svg" alt="Clarys Systems" height="90"></a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="index.html#services">Services</a>
-        <a href="index.html#proof">Case Studies</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="index.html#contact" class="nav-cta">Book a consultation</a>
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-brand"><img src="logo-clarys-dark.svg" alt="Clarys Systems" class="nav-logo"></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#proof">Case Studies</a>
+          <a href="https://calendar.app.google/nf94Vs2CCMXuQfKP9" target="_blank" rel="noopener" class="nav-cta">Book a consultation</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    <div class="nav-overlay"></div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero hero-page">
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
     <div class="container">
-      <div class="hero-content fade-up">
-        <p class="label">Case Study</p>
-        <h1>Consolidating Shareholder Data for a TSX-Filed M&amp;A Circular</h1>
-      </div>
+      <p class="section-label">Case Study</p>
+      <h1>Consolidating Shareholder Data for a TSX-Filed M&amp;A Circular</h1>
     </div>
   </section>
 
-  <!-- CASE STUDY CONTENT -->
-  <section class="case-study-section">
+  <!-- ARTICLE CONTENT -->
+  <section class="article-section">
     <div class="container">
-      <div class="case-study-content">
+      <div class="article-content">
 
-        <h2 class="fade-up">The Results</h2>
         <div class="fade-up">
+          <h2>The Results</h2>
           <table class="results-table">
             <thead>
               <tr>
@@ -82,15 +82,15 @@
           </table>
         </div>
 
-        <h2 class="fade-up">The Challenge</h2>
         <div class="fade-up">
+          <h2>The Challenge</h2>
           <p>A TSX-listed Canadian issuer was preparing a shareholder circular for an M&amp;A transaction. The filing &mdash; and the mailing behind it &mdash; had to be right, and it had to be on time. Missed ballots on a TSX circular are not a fix-it-tomorrow problem.</p>
           <p>The underlying data was the problem. Shareholder information lived across three unrelated sources: a registry export from the transfer agent, an internal cap-table workbook maintained by the company's advisors, and a scattered email-address spreadsheet. Addresses were inconsistent across twenty-one jurisdictions &mdash; fuzzy city names, missing postal codes, UK and Irish cities that external geocoders had silently mapped to the wrong country, and edge territories like the Falkland Islands, Gibraltar, and Guernsey that off-the-shelf tools don't handle well. Some holders appeared in multiple forms, some held different instruments (shares, warrants, options) that needed to be combined onto a single envelope, and a handful required <em>two</em> envelopes by explicit client direction.</p>
           <p>None of it could be trusted for a regulated mailing without a full reconciliation &mdash; and there wasn't time to do that reconciliation by hand.</p>
         </div>
 
-        <h2 class="fade-up">The Solution</h2>
         <div class="fade-up">
+          <h2>The Solution</h2>
           <p>I was brought in to consolidate the data and deliver a circular the company could file with confidence. The approach was full-stack: clean the inputs, build the system, ship the artifacts.</p>
           <p><strong>Address cleanup pipeline.</strong> Built a fuzzy city matcher and a jurisdiction-aware fix layer (particularly for UK and Irish cities that off-the-shelf geocoders mishandle), then audited every holder's address against the corrected geocoder output. The addresses that went on envelopes were the addresses that would actually deliver.</p>
           <p><strong>Consolidated mailing list.</strong> Reduced the raw data to one row per holder by default, with explicit multi-envelope exceptions where the client required them &mdash; shares split proportionally and the exception flagged for review. No silent duplicates, no guessed merges.</p>
@@ -104,8 +104,11 @@
           <p>This is the shape of a lot of business operations: the data exists, but it lives across three systems that were never designed to talk to each other, and when a deadline hits, someone has to reconcile it by hand. That works until it doesn't &mdash; until the stakes are a regulated filing, the volume is 1,400 holders across 21 jurisdictions, and there's no time left. Clarys's job in a project like this is to understand the operation end-to-end, build the pipeline that does the reconciliation reliably, and hand the client artifacts they can sign their name to. The circular got filed on time, the workbooks match, the mailing delivered.</p>
         </div>
 
-        <div class="text-center fade-up mt-4">
-          <a href="index.html#contact" class="btn btn-primary">Have a similar challenge? Book a consultation <span class="arrow">&rarr;</span></a>
+        <div class="article-cta fade-up">
+          <a href="https://calendar.app.google/nf94Vs2CCMXuQfKP9" target="_blank" rel="noopener" class="btn btn-primary">
+            Have a similar challenge? Book a consultation
+            <span class="arrow">&rarr;</span>
+          </a>
         </div>
 
       </div>
@@ -125,6 +128,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/landing.js"></script>
 </body>
 </html>

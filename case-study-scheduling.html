@@ -12,44 +12,44 @@
   <link rel="icon" href="logo-clarys-dark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="logo-clarys-systems.svg" alt="Clarys Systems" height="90"></a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="index.html#services">Services</a>
-        <a href="index.html#proof">Case Studies</a>
-        <a href="index.html#contact">Contact</a>
-        <a href="index.html#contact" class="nav-cta">Book a consultation</a>
+    <div class="nav-inner container">
+      <a href="index.html" class="nav-brand"><img src="logo-clarys-dark.svg" alt="Clarys Systems" class="nav-logo"></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="index.html#services">Services</a>
+          <a href="index.html#proof">Case Studies</a>
+          <a href="https://calendar.app.google/nf94Vs2CCMXuQfKP9" target="_blank" rel="noopener" class="nav-cta">Book a consultation</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    <div class="nav-overlay"></div>
   </nav>
 
-  <!-- HERO -->
-  <section class="hero hero-page">
+  <!-- ARTICLE HERO -->
+  <section class="article-hero">
     <div class="container">
-      <div class="hero-content fade-up">
-        <p class="label">Case Study</p>
-        <h1>Automating Class Scheduling for a Performing Arts College</h1>
-      </div>
+      <p class="section-label">Case Study</p>
+      <h1>Automating Class Scheduling for a Performing Arts College</h1>
     </div>
   </section>
 
-  <!-- CASE STUDY CONTENT -->
-  <section class="case-study-section">
+  <!-- ARTICLE CONTENT -->
+  <section class="article-section">
     <div class="container">
-      <div class="case-study-content">
+      <div class="article-content">
 
-        <h2 class="fade-up">The Results</h2>
         <div class="fade-up">
+          <h2>The Results</h2>
           <table class="results-table">
             <thead>
               <tr>
@@ -78,29 +78,32 @@
           </table>
         </div>
 
-        <h2 class="fade-up">The Challenge</h2>
         <div class="fade-up">
-          <p>A performing arts college in Germany with around 300 students and a dozen teachers had been managing their class scheduling by hand in Excel. For years, this worked fine — the school was small enough that one person could map it all out manually.</p>
-          <p>But the school was growing. Multiple year groups, overlapping teacher availability, room assignments, and an increasingly complex curriculum made manual scheduling unsustainable. Each new term meant days of painstaking spreadsheet work, and mistakes — double-bookings, missed classes, scheduling conflicts — were becoming more frequent.</p>
+          <h2>The Challenge</h2>
+          <p>A performing arts college in Germany with around 300 students and a dozen teachers had been managing their class scheduling by hand in Excel. For years, this worked fine &mdash; the school was small enough that one person could map it all out manually.</p>
+          <p>But the school was growing. Multiple year groups, overlapping teacher availability, room assignments, and an increasingly complex curriculum made manual scheduling unsustainable. Each new term meant days of painstaking spreadsheet work, and mistakes &mdash; double-bookings, missed classes, scheduling conflicts &mdash; were becoming more frequent.</p>
           <p>They evaluated off-the-shelf scheduling software, but found it too rigid and cumbersome. A performing arts curriculum doesn't fit neatly into the templates that standard school software assumes. They needed something built around the way their school actually operates.</p>
         </div>
 
-        <h2 class="fade-up">The Solution</h2>
         <div class="fade-up">
+          <h2>The Solution</h2>
           <p>I built a custom web application, hosted on a dedicated server, that replaced the entire spreadsheet-based workflow:</p>
-          <p><strong>Automated schedule generation:</strong> The system handled the complex logic of assigning classes across multiple year groups while respecting teacher availability and room constraints — work that previously took days of manual effort.</p>
+          <p><strong>Automated schedule generation:</strong> The system handled the complex logic of assigning classes across multiple year groups while respecting teacher availability and room constraints &mdash; work that previously took days of manual effort.</p>
           <p><strong>Schedule distribution:</strong> Once generated, schedules were published through a portal and automatically emailed to both students and teachers. No more printing, no more chasing people down with updates.</p>
-          <p><strong>Teacher hours tracking:</strong> The system logged hours per class and per teacher, giving the school accurate data for labour cost estimation and budgeting — replacing guesswork with real numbers.</p>
-          <p><strong>Curriculum database:</strong> A persistent record of what each teacher taught, per subject, per year. This gave the school a living knowledge base of their curriculum history — still in active use today.</p>
+          <p><strong>Teacher hours tracking:</strong> The system logged hours per class and per teacher, giving the school accurate data for labour cost estimation and budgeting &mdash; replacing guesswork with real numbers.</p>
+          <p><strong>Curriculum database:</strong> A persistent record of what each teacher taught, per subject, per year. This gave the school a living knowledge base of their curriculum history &mdash; still in active use today.</p>
         </div>
 
         <div class="takeaway fade-up">
           <h2>Key Takeaway</h2>
-          <p>This is a textbook case of a system that worked — until growth broke it. The school didn't need software when they were small. But what was manageable for 100 students became impossible for 300. Rather than forcing them into generic scheduling software that didn't fit their curriculum, we built exactly what they needed. The result: a system that removed the bottleneck, enabled the school to keep growing, and is still serving them today.</p>
+          <p>This is a textbook case of a system that worked &mdash; until growth broke it. The school didn't need software when they were small. But what was manageable for 100 students became impossible for 300. Rather than forcing them into generic scheduling software that didn't fit their curriculum, we built exactly what they needed. The result: a system that removed the bottleneck, enabled the school to keep growing, and is still serving them today.</p>
         </div>
 
-        <div class="text-center fade-up mt-4">
-          <a href="index.html#contact" class="btn btn-primary">Have a similar challenge? Book a consultation <span class="arrow">&rarr;</span></a>
+        <div class="article-cta fade-up">
+          <a href="https://calendar.app.google/nf94Vs2CCMXuQfKP9" target="_blank" rel="noopener" class="btn btn-primary">
+            Have a similar challenge? Book a consultation
+            <span class="arrow">&rarr;</span>
+          </a>
         </div>
 
       </div>
@@ -120,6 +123,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/landing.js"></script>
 </body>
 </html>
