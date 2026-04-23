@@ -355,7 +355,7 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
 /* --- Service Cards Grid --- */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-top: 60px;
 }
