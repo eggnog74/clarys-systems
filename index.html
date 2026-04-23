@@ -3,182 +3,291 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clarys Systems — Custom Automation &amp; Systems Design</title>
-  <meta name="description" content="Clarys Systems designs and builds custom automation that eliminates manual work, reduces errors, and gives your team their time back.">
-  <meta property="og:title" content="Clarys Systems — Custom Automation & Systems Design">
-  <meta property="og:description" content="We design and build custom automation that eliminates manual work, reduces errors, and gives your team their time back.">
+  <title>Clarys Systems — Smart Automation for Growing Businesses</title>
+  <meta name="description" content="Clarys Systems designs and builds smart automation for small and growing businesses. Less manual work, fewer mistakes, more time.">
+  <meta property="og:title" content="Clarys Systems — Smart Automation for Your Business">
+  <meta property="og:description" content="We build systems that take the busywork out of your workday.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="og-image.png">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Analytics: replace with your tracking snippet -->
-  <!-- <script defer data-domain="claryssystems.com" src="https://plausible.io/js/script.js"></script> -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
 </head>
 <body>
 
   <!-- NAV -->
   <nav class="nav" role="navigation" aria-label="Main navigation">
-    <div class="container nav-inner">
-      <a href="index.html" class="nav-logo"><img src="logo-clarys-systems.svg" alt="Clarys Systems" height="90"></a>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links">
-        <a href="services.html">Services</a>
-        <a href="case-studies.html">Case Studies</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html" class="nav-cta">Book a consultation</a>
+    <div class="nav-inner container">
+      <a href="#" class="nav-brand"><img src="logo-clarys-dark.svg" alt="Clarys Systems" class="nav-logo"></a>
+      <div class="nav-right">
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#how">How it works</a>
+          <a href="#proof">Results</a>
+          <a href="#contact" class="nav-cta">Let's talk</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    <div class="nav-overlay"></div>
   </nav>
 
   <!-- HERO -->
   <section class="hero">
     <div class="container">
       <div class="hero-content fade-up">
-        <h1>Your business runs on systems. We make them work.</h1>
-        <p>Clarys Systems designs and builds custom automation that eliminates manual work, reduces errors, and gives your team their time back.</p>
+        <p class="hero-label">Automation &amp; Systems</p>
+        <h1>We take the busy&shy;work out of your business.</h1>
+        <p>Clarys builds custom automation for small and growing businesses. Less manual work, fewer mistakes, more time for what matters.</p>
         <div class="hero-actions">
-          <a href="contact.html" class="btn btn-primary">Book a consultation <span class="arrow">&rarr;</span></a>
-          <a href="case-studies.html" class="btn btn-secondary">See our work <span class="arrow">&rarr;</span></a>
+          <a href="#contact" class="btn btn-primary">
+            Free intro call
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="#proof" class="btn btn-ghost">
+            See what we've built
+            <span class="arrow">&darr;</span>
+          </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHAT WE DO -->
-  <section class="section section-alt">
+  <!-- SERVICES -->
+  <section class="section" id="services">
     <div class="container">
-      <div class="section-header fade-up">
-        <p class="label">What we do</p>
-        <h2>Three ways we transform your operations</h2>
+      <div class="fade-up">
+        <p class="section-label">What we do</p>
+        <h2>Four things. Done well.</h2>
+        <p class="section-intro">We don't try to do everything. We focus on what saves you the most time.</p>
       </div>
-      <div class="grid-3">
+      <div class="cards-grid stagger">
         <div class="card fade-up">
           <div class="card-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182"/></svg>
           </div>
           <h3>Automate</h3>
-          <p>We identify the repetitive, manual processes that drain your team's hours and build systems that handle them automatically.</p>
+          <p>That thing you do every day in Excel, by hand, copy-paste? We build a system that does it for you. Automatically.</p>
         </div>
         <div class="card fade-up">
           <div class="card-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"/></svg>
           </div>
-          <h3>Integrate</h3>
-          <p>We connect the tools your business already uses — eliminating the copy-paste, the double entry, and the data gaps between systems.</p>
+          <h3>Connect</h3>
+          <p>Your tools don't talk to each other? We connect them. No more double entry, no more data gaps between systems.</p>
         </div>
         <div class="card fade-up">
           <div class="card-icon">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085"/></svg>
           </div>
           <h3>Build</h3>
-          <p>When off-the-shelf tools fall short, we design and build custom solutions tailored to how your business actually operates.</p>
+          <p>Need something that doesn't exist yet? A dashboard, a booking tool, an internal app — we build exactly what fits your workflow.</p>
+        </div>
+        <div class="card fade-up">
+          <div class="card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.847-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.847.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z"/></svg>
+          </div>
+          <h3>Claude Skills &amp; custom AI</h3>
+          <p>Automate complex knowledge work &mdash; custom AI agents and Claude Skills tuned to your procedures, your documents, your tone. Not a generic chatbot.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROOF / STATS -->
-  <section class="section">
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how" style="background: var(--bg-secondary);">
     <div class="container">
-      <div class="section-header-center fade-up">
-        <p class="label">Proven results</p>
-        <h2>Systems that deliver measurable impact</h2>
-      </div>
-      <div class="stats-grid fade-up">
-        <div class="stat">
-          <div class="stat-number">400+</div>
-          <div class="stat-label">Hours saved per year</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">100s</div>
-          <div class="stat-label">Of projects automated</div>
-        </div>
-        <div class="stat">
-          <div class="stat-number">Pentagon</div>
-          <div class="stat-label">Grade installations</div>
-        </div>
-      </div>
-      <div class="fade-up text-center">
-        <p class="proof-text">We built the automation system used by a major US defense contractor to manage all project documentation — from quotes to bills of materials. It's still running today.</p>
-        <a href="case-studies.html" class="btn btn-secondary mt-2">See our case studies <span class="arrow">&rarr;</span></a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES OVERVIEW -->
-  <section class="section section-alt">
-    <div class="container">
-      <div class="section-header fade-up">
-        <p class="label">How we help</p>
-        <h2>Services built around your operations</h2>
-      </div>
       <div class="fade-up">
-        <ul class="services-list">
-          <li>Workflow &amp; process automation</li>
-          <li>ERP &amp; business system design</li>
-          <li>Data pipelines &amp; reporting</li>
-          <li>AI integration for operations</li>
-          <li>Custom tool building</li>
-        </ul>
-        <a href="services.html" class="btn btn-secondary">Learn more about our services <span class="arrow">&rarr;</span></a>
+        <p class="section-label">How it works</p>
+        <h2>Simple. Transparent. No surprises.</h2>
+      </div>
+      <div class="steps stagger">
+        <div class="step fade-up">
+          <div class="step-number">1</div>
+          <h3>We listen</h3>
+          <p>Tell us what takes too long, what goes wrong, what drives you crazy. Free call, no obligations.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-number">2</div>
+          <h3>We propose</h3>
+          <p>Clear plan, fixed price, no jargon. You know exactly what you're getting before we start.</p>
+        </div>
+        <div class="step fade-up">
+          <div class="step-number">3</div>
+          <h3>We build</h3>
+          <p>We deliver a working system. Not a pitch deck. You see results, not promises.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- AFFORDABLE -->
-  <section class="section">
+  <!-- PROOF / CASE STUDIES -->
+  <section class="section" id="proof">
     <div class="container">
-      <div class="ai-approach fade-up">
-        <p class="label">Built lean by design</p>
-        <h2>We keep our prices low because we practice what we preach.</h2>
-        <p class="mb-0">The same automation we build for clients runs our own business — minimal overhead, no bloated team, no cost passed on to you. That means professional systems engineering at prices that work for any size business.</p>
+      <div class="fade-up">
+        <p class="section-label">Real results</p>
+        <h2>What we've built.</h2>
+      </div>
+
+      <!-- Case 1: Performing Arts College (scheduling) -->
+      <div class="proof fade-up">
+        <div class="proof-stats">
+          <div>
+            <div class="proof-stat-value">10h</div>
+            <div class="proof-stat-label">Saved per week</div>
+          </div>
+          <div>
+            <div class="proof-stat-value">3&times;</div>
+            <div class="proof-stat-label">Growth enabled</div>
+          </div>
+          <div>
+            <div class="proof-stat-value">300+</div>
+            <div class="proof-stat-label">Students managed</div>
+          </div>
+        </div>
+        <h3>Performing Arts College &mdash; Germany</h3>
+        <p>A performing arts school in Germany was scheduling 300+ students by hand in Excel. Every term meant days of work, double-bookings, and missed classes. Off-the-shelf software didn't fit their curriculum.</p>
+        <p style="margin-top: 12px;">We built a custom web app that generates schedules automatically, distributes them to students and teachers, tracks hours, and manages the entire curriculum database. It's still running today.</p>
+        <p style="margin-top: 24px;">
+          <a href="case-study-scheduling.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">Read the full case study <span class="arrow">&rarr;</span></a>
+        </p>
+      </div>
+
+      <!-- Case 2: US AV Integrator (ITG) -->
+      <div class="proof fade-up">
+        <div class="proof-stats">
+          <div>
+            <div class="proof-stat-value">400+</div>
+            <div class="proof-stat-label">Hours saved per year</div>
+          </div>
+          <div>
+            <div class="proof-stat-value">Hundreds</div>
+            <div class="proof-stat-label">Projects per year</div>
+          </div>
+          <div>
+            <div class="proof-stat-value">Pentagon</div>
+            <div class="proof-stat-label">Installations supported</div>
+          </div>
+        </div>
+        <h3>Government AV Integrator &mdash; United States</h3>
+        <p>A major US-based AV integration company &mdash; contracted to install systems in high-security government facilities including the Pentagon &mdash; was producing project documentation by hand. Each project meant hours of cut-and-paste across dozens of Excel tabs for quotes, bills of materials, and cost summaries.</p>
+        <p style="margin-top: 12px;">We learned D-Tools to produce proper system design drawings, then built Excel automation that populated every room tab, BOM, and cost summary from a single command. Hours per project collapsed to minutes, and the system is used on projects up to and including Pentagon installations.</p>
+        <p style="margin-top: 24px;">
+          <a href="case-study.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">Read the full case study <span class="arrow">&rarr;</span></a>
+        </p>
+      </div>
+
+      <!-- Case 3: TSX M&A Circular (JHI) -->
+      <div class="proof fade-up">
+        <div class="proof-stats">
+          <div>
+            <div class="proof-stat-value">1,400</div>
+            <div class="proof-stat-label">Holders processed</div>
+          </div>
+          <div>
+            <div class="proof-stat-value">21</div>
+            <div class="proof-stat-label">Jurisdictions</div>
+          </div>
+          <div>
+            <div class="proof-stat-value">TSX</div>
+            <div class="proof-stat-label">Filed on time</div>
+          </div>
+        </div>
+        <h3>TSX-Listed Issuer &mdash; Canada</h3>
+        <p>A TSX-listed Canadian issuer was preparing a shareholder circular for an M&amp;A transaction. Shareholder data lived across a registry export, an internal cap-table workbook, and a scattered email spreadsheet &mdash; 1,400 holders across 21 jurisdictions, with inconsistent addresses and edge territories that standard geocoders mishandle.</p>
+        <p style="margin-top: 12px;">We built an address cleanup pipeline, consolidated holders into one row each (with explicit multi-envelope exceptions where required), and shipped a five-tab TSX-formatted workbook plus a standalone shareholder database. The circular filed on time.</p>
+        <p style="margin-top: 24px;">
+          <a href="case-study-shareholder-circular.html" style="color: var(--accent); font-weight: 600; text-decoration: none;">Read the full case study <span class="arrow">&rarr;</span></a>
+        </p>
       </div>
     </div>
   </section>
 
-  <!-- AI APPROACH -->
-  <section class="section section-alt">
+  <!-- APPROACH -->
+  <section class="section" style="background: var(--bg-secondary);">
     <div class="container">
-      <div class="ai-approach fade-up">
-        <p class="label">Our approach to AI</p>
-        <h2>We stay at the frontier so you don't have to.</h2>
-        <p>The AI landscape moves fast. New models, agent frameworks, and platforms emerge every week — each with different strengths, limitations, and price points. Keeping up is a full-time job. We make it ours.</p>
-        <p>We continuously track the latest models, autonomous agents, and development platforms across the industry. We test them, benchmark them, and understand where each one excels. When we build for you, we don't default to one tool — we compile the right combination of technologies for your specific problem.</p>
-        <p>This matters because AI is no longer optional. Businesses that integrate it effectively gain a compounding advantage — faster operations, fewer errors, better decisions. Those that don't fall behind competitors who do. The gap widens every month.</p>
-        <p class="mb-0">Our job is to make sure you're on the right side of that gap. We bring the research, the testing, and the implementation experience — so every system we build uses the most effective technology available today, not last year.</p>
+      <div class="fade-up">
+        <p class="section-label">Our approach</p>
+        <h2>No buzzwords. Just the right tools.</h2>
+        <p class="section-intro">We use AI, automation, and custom code — but only when it actually solves your problem. Not because it's trendy.</p>
+      </div>
+      <div class="approach-grid stagger">
+        <div class="approach-item fade-up">
+          <h3><span class="dot"></span>Right-sized solutions</h3>
+          <p>You don't need SAP. You need something that works for your team, your budget, your workflow.</p>
+        </div>
+        <div class="approach-item fade-up">
+          <h3><span class="dot"></span>AI that makes sense</h3>
+          <p>We track the latest models and platforms. We use what works best for your case &mdash; not whatever's hyped this week.</p>
+        </div>
+        <div class="approach-item fade-up">
+          <h3><span class="dot"></span>Low overhead = fair prices</h3>
+          <p>We automate our own business too. No big team, no office, no cost passed on to you.</p>
+        </div>
+        <div class="approach-item fade-up">
+          <h3><span class="dot"></span>20+ years experience</h3>
+          <p>System design, production management, software engineering. International background, global delivery.</p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- FOUNDER -->
-  <section class="section section-alt">
+  <section class="section" id="founder">
     <div class="container">
       <div class="founder fade-up">
         <div class="founder-photo">
-          <img src="Resume/profile_cropped.png" alt="John Lloyd — Founder, Clarys Systems">
+          <img src="img/profile_cropped.png" alt="John Lloyd — Founder, Clarys Systems">
         </div>
         <div class="founder-text">
-          <p class="label">Meet the founder</p>
+          <p class="section-label">Meet the founder</p>
           <h2>John Lloyd</h2>
           <p>With over 20 years in system design, international production management, and a deep pivot into software engineering and automation, I founded Clarys Systems to help businesses eliminate the manual work that holds them back.</p>
-          <p>At my core I'm a builder — whether it's programming Crestron control systems, developing full-stack web applications, or designing Python pipelines that connect Excel, Visio, AutoCAD, and ERP platforms. I've managed teams across the US, EU, Russia, and China, and I bring that same cross-discipline thinking to every project.</p>
-          <p class="mb-0">Based in Tilburg, Netherlands. Working globally.</p>
+          <p>At my core I'm a builder &mdash; whether it's creating custom programs for performing arts, building co-op databases and webshop management systems, developing full-stack web applications, or designing Python pipelines that connect Excel, AutoCAD, and ERP platforms. I've managed teams across the US, EU, Russia, and China, and I bring that same cross-discipline thinking to every project.</p>
+          <p>Based in Tilburg, Netherlands. Working globally.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="section section-dark cta-banner">
-    <div class="container fade-up">
-      <h2>Ready to stop doing manually what a system should handle?</h2>
-      <p>Tell us what's slowing your business down. The first conversation is free.</p>
-      <a href="contact.html" class="btn btn-primary">Get in touch <span class="arrow">&rarr;</span></a>
+  <!-- PRICING / CTA BAR -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="fade-up">
+        <div class="pricing-bar">
+          <div>
+            <h3>No surprise invoices.</h3>
+            <p>Fixed project price or transparent hourly rate. Always agreed before we start. First conversation is always free.</p>
+          </div>
+          <a href="#contact" class="btn btn-primary" style="flex-shrink: 0;">
+            Get started
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="fade-up">
+        <h2>Let's talk about your workflow.</h2>
+        <p>Tell us what's taking too long. We'll tell you if we can help &mdash; honestly.</p>
+        <div class="contact-links">
+          <a href="mailto:hello@claryssystems.com" class="btn btn-primary">
+            Email us
+            <span class="arrow">&rarr;</span>
+          </a>
+          <a href="https://linkedin.com/in/johnnylloyd" target="_blank" rel="noopener" class="btn btn-ghost">
+            LinkedIn
+            <span class="arrow">&rarr;</span>
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -195,6 +304,6 @@
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="js/landing.js"></script>
 </body>
 </html>

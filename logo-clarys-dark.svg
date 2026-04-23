@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 160" width="520" height="160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- Hexagon icon — recolored for dark mode -->
+  <g transform="translate(80, 80)">
+    <!-- Hexagon outline -->
+    <polygon points="0,-60 52,-30 52,30 0,60 -52,30 -52,-30"
+             fill="none" stroke="#ff6b4a" stroke-width="3" stroke-linejoin="round"/>
+
+    <!-- Internal cross-lines -->
+    <line x1="0" y1="-60" x2="0" y2="60" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <line x1="52" y1="-30" x2="-52" y2="30" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+    <line x1="52" y1="30" x2="-52" y2="-30" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+
+    <!-- Additional cross-lines -->
+    <line x1="0" y1="-60" x2="52" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <line x1="0" y1="-60" x2="-52" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <line x1="52" y1="-30" x2="0" y2="60" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <line x1="52" y1="-30" x2="-52" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <line x1="-52" y1="-30" x2="0" y2="60" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    <line x1="-52" y1="-30" x2="52" y2="30" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+
+    <!-- Center dot — coral accent -->
+    <circle cx="0" cy="0" r="12" fill="#ff6b4a"/>
+
+    <!-- Vertex nodes — coral tones -->
+    <circle cx="0" cy="-60" r="7" fill="#ff6b4a"/>
+    <circle cx="52" cy="-30" r="7" fill="#ff6b4a"/>
+    <circle cx="52" cy="30" r="7" fill="#ff6b4a"/>
+    <!-- Lighter coral nodes -->
+    <circle cx="0" cy="60" r="7" fill="#ff9a85"/>
+    <circle cx="-52" cy="30" r="7" fill="#ff9a85"/>
+    <circle cx="-52" cy="-30" r="7" fill="#ff9a85"/>
+  </g>
+
+  <!-- Text: Clarys — white for dark bg -->
+  <text x="170" y="78" font-family="'Inter', sans-serif" font-weight="700" font-size="52" fill="#eaeaef" letter-spacing="-0.5">Clarys</text>
+
+  <!-- Text: Systems — coral accent -->
+  <text x="172" y="118" font-family="'Inter', sans-serif" font-weight="400" font-size="30" fill="#ff6b4a" letter-spacing="5">SYSTEMS</text>
+</svg>
