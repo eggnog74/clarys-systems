@@ -1,0 +1,5 @@
+# Force anyone landing on claryssystems.com/nl/... to the canonical NL domain.
+# The "!" makes the redirect override the static files that Netlify still uploads
+# from the nl/ folder (we deploy from repo root; filtering would need a build step).
+/nl       https://claryssystems.nl        301!
+/nl/*     https://claryssystems.nl/:splat 301!
