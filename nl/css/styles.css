@@ -784,3 +784,35 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
   .btn { width: 100%; justify-content: center; }
   .contact-links { flex-direction: column; align-items: center; }
 }
+
+/* ===== FOUNDER ===== */
+.founder {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 48px;
+  align-items: center;
+  max-width: 900px;
+}
+
+.founder-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  transform: translateY(-90px);
+}
+
+.founder-text h2 { margin-bottom: 1rem; }
+
+.founder-text p {
+  font-size: 1.0625rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .founder { grid-template-columns: 1fr; text-align: center; gap: 24px; }
+  .founder-photo { display: flex; justify-content: center; }
+  .founder-photo img { width: 160px; height: 160px; }
+}
