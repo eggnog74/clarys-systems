@@ -14,6 +14,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-specific: alternating-side layout */
+    .alt-side { max-width: 760px; }
+    .alt-right { margin-left: auto; }
+    .steps.steps-narrow {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
+    }
+    .steps.steps-narrow::before { display: none; }
+    .approach-grid.approach-grid-narrow {
+      grid-template-columns: 1fr;
+    }
+    @media (max-width: 768px) {
+      .alt-side { max-width: 100%; }
+      .alt-right { margin-left: 0; }
+      .steps.steps-narrow { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
 
@@ -118,7 +136,7 @@
   <!-- WHAT YOU GET -->
   <section class="section" id="deliverables" style="background: var(--bg-secondary);">
     <div class="container">
-      <div class="fade-up">
+      <div class="fade-up alt-side alt-right">
         <p class="section-label">
           <span data-lang-en>What you get</span>
           <span data-lang-nl>Wat je krijgt</span>
@@ -128,7 +146,7 @@
           <span data-lang-nl>Vier opleveringen. Zonder ruis.</span>
         </h2>
       </div>
-      <ul style="list-style: none; padding: 0; margin: 48px 0 0 0; display: flex; flex-direction: column; gap: 24px; max-width: 800px;">
+      <ul class="alt-side alt-right" style="list-style: none; padding: 0; margin-top: 48px; display: flex; flex-direction: column; gap: 24px;">
         <li style="display: flex; gap: 16px; align-items: flex-start;">
           <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent); flex-shrink: 0; margin-top: 10px;"></span>
           <p style="margin: 0; color: var(--text-secondary); line-height: 1.7; font-size: 16px;">
@@ -164,7 +182,7 @@
   <!-- HOW IT WORKS -->
   <section class="section" id="process">
     <div class="container">
-      <div class="fade-up">
+      <div class="fade-up alt-side">
         <p class="section-label">
           <span data-lang-en>How it works</span>
           <span data-lang-nl>Werkwijze</span>
@@ -174,7 +192,7 @@
           <span data-lang-nl>Vier stappen. Geen verrassingen.</span>
         </h2>
       </div>
-      <div class="steps stagger" style="grid-template-columns: repeat(4, 1fr); gap: 28px;">
+      <div class="steps stagger steps-narrow alt-side">
         <div class="step fade-up">
           <div class="step-number">1</div>
           <h3>
@@ -226,7 +244,7 @@
   <!-- PROOF -->
   <section class="section" id="proof" style="background: var(--bg-secondary);">
     <div class="container">
-      <div class="fade-up">
+      <div class="fade-up alt-side alt-right">
         <p class="section-label">
           <span data-lang-en>Proof</span>
           <span data-lang-nl>Bewijs</span>
@@ -236,7 +254,7 @@
           <span data-lang-nl>We hebben dit eerder gedaan.</span>
         </h2>
       </div>
-      <div class="proof fade-up">
+      <div class="proof fade-up alt-side alt-right">
         <p>
           <span data-lang-en>Recent engagements include a TSX-listed Canadian issuer preparing a shareholder circular under a regulatory deadline, where over 1,400 holders' records were cleaned, reconciled, and reformatted to the transfer agent's template through a reproducible pipeline.</span>
           <span data-lang-nl>Recente opdrachten omvatten een TSX-genoteerde Canadese onderneming die een aandeelhouderscirculaire voorbereidde onder een regulatoire deadline, waarbij gegevens van ruim 1.400 aandeelhouders werden opgeschoond, verzoend en omgezet naar de template van de transfer agent via een reproduceerbare pijplijn.</span>
@@ -254,14 +272,14 @@
   <!-- FAQ -->
   <section class="section" id="faq">
     <div class="container">
-      <div class="fade-up">
+      <div class="fade-up alt-side">
         <p class="section-label">FAQ</p>
         <h2>
           <span data-lang-en>Common questions.</span>
           <span data-lang-nl>Veelgestelde vragen.</span>
         </h2>
       </div>
-      <div class="approach-grid stagger">
+      <div class="approach-grid stagger approach-grid-narrow alt-side">
         <div class="approach-item fade-up">
           <h3><span class="dot"></span>
             <span data-lang-en>What if my data isn't in Excel?</span>
