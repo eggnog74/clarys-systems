@@ -91,10 +91,10 @@
         <div class="fade-up">
           <h2>The Solution</h2>
           <p>I was brought in to consolidate the data and deliver a circular the company could file with confidence. The approach was full-stack: clean the inputs, build the system, ship the artifacts.</p>
-          <p><strong>Address cleanup pipeline.</strong> Built a fuzzy city matcher and a jurisdiction-aware fix layer (particularly for UK and Irish cities that off-the-shelf geocoders mishandle), then audited every holder's address against the corrected geocoder output. The addresses that went on envelopes were the addresses that would actually deliver.</p>
-          <p><strong>Consolidated mailing list.</strong> Reduced the raw data to one row per holder by default, with explicit multi-envelope exceptions where the client required them &mdash; shares split proportionally and the exception flagged for review. No silent duplicates, no guessed merges.</p>
-          <p><strong>TSX-formatted multi-tab deliverable.</strong> A single workbook with five tabs &mdash; Shareholders, Warrants, Options, COC, LOAN &mdash; structured to the filing's requirements, with warrants and options split per TSX Trust's handling rules. Versioned through two dozen iterations as the transaction terms evolved.</p>
-          <p><strong>Shareholder database.</strong> A working register of the full shareholder base delivered as a standalone artifact alongside the circular deliverables.</p>
+          <p><strong>Address cleanup pipeline.</strong> Fuzzy city matcher and jurisdiction-aware fix layer, audited against corrected geocoder output.</p>
+          <p><strong>Consolidated mailing list.</strong> One row per holder, with explicit multi-envelope exceptions flagged for review.</p>
+          <p><strong>TSX-formatted multi-tab deliverable.</strong> A five-tab workbook (Shareholders, Warrants, Options, COC, LOAN) versioned through two dozen iterations.</p>
+          <p><strong>Shareholder database.</strong> A working register of the full shareholder base, delivered alongside the circular.</p>
           <p>All driven by Python and Excel automation that preserved the quirks of the real workbooks (hidden sheets, formula-bearing cells, formatting the client relied on) rather than flattening them into something cleaner but wrong.</p>
         </div>
 
