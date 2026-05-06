@@ -532,6 +532,72 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
   max-width: 640px;
 }
 
+/* --- Testimonials --- */
+.testimonials-grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 48px;
+  justify-items: stretch;
+}
+
+.testimonial {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 40px 44px;
+  position: relative;
+  max-width: 820px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.testimonial-mark {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 56px;
+  line-height: 0.4;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 18px;
+  user-select: none;
+}
+
+.testimonial-quote {
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin: 0 0 24px;
+  font-style: normal;
+  quotes: none;
+}
+
+.testimonial-quote::before,
+.testimonial-quote::after { content: none; }
+
+.testimonial-cite {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.testimonial-cite-name {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.testimonial-cite-title {
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .testimonial { padding: 32px 24px; }
+  .testimonial-mark { font-size: 44px; }
+  .testimonial-quote { font-size: 16px; }
+}
+
 /* --- Approach / AI --- */
 .approach-grid {
   display: grid;
