@@ -328,6 +328,10 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
   position: relative;
 }
 
+#services {
+  padding-top: 70px;
+}
+
 .section-label {
   font-size: 13px;
   font-weight: 600;
@@ -557,7 +561,7 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
   scroll-snap-align: center;
   margin-top: 0;
   min-width: 0;
-  padding-bottom: 90px;
+  padding: 60px 100px 90px;
 }
 
 .proof-controls {
@@ -641,7 +645,7 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
 
 @media (max-width: 768px) {
   .proof-arrow { display: none; }
-  .proof-track > .proof { padding-bottom: 60px; }
+  .proof-track > .proof { padding: 36px 24px 60px; }
   .proof-dots { bottom: 22px; }
 }
 
@@ -656,9 +660,9 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
 .testimonial {
   background: none;
   border: none;
-  padding: 0;
+  padding: 0 24px;
   position: relative;
-  max-width: 820px;
+  max-width: 700px;
   margin: 0 auto;
   width: 100%;
 }
@@ -704,7 +708,7 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
 }
 
 @media (max-width: 768px) {
-  .testimonial { padding: 0; }
+  .testimonial { padding: 0 16px; }
   .testimonial-mark { font-size: 44px; }
   .testimonial-quote { font-size: 16px; }
 }
@@ -931,6 +935,7 @@ span[data-lang-nl], a[data-lang-nl] { display: none; }
   .hero h1 { font-size: 2.2rem; }
 
   .section { padding: 80px 0; }
+  #services { padding-top: 50px; }
 
   .cards-grid,
   .steps { grid-template-columns: 1fr; }
