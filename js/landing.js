@@ -75,4 +75,56 @@
       }
     });
   });
+
+  // --- Case study carousel ---
+  const proofTrack = document.querySelector('.proof-track');
+  if (proofTrack) {
+    const slides = Array.from(proofTrack.querySelectorAll('.proof'));
+    const dots = Array.from(document.querySelectorAll('.proof-dot'));
+    const prevBtn = document.querySelector('.proof-prev');
+    const nextBtn = document.querySelector('.proof-next');
+
+    // Carousel slides are horizontally offscreen so the global fade-up
+    // observer never fires on slides 2+. Reveal them all up front.
+    slides.forEach(s => s.classList.add('visible'));
+
+    function currentIndex() {
+      const center = proofTrack.scrollLeft + proofTrack.clientWidth / 2;
+      let best = 0, bestDist = Infinity;
+      slides.forEach((s, i) => {
+        const c = s.offsetLeft - proofTrack.offsetLeft + s.offsetWidth / 2;
+        const d = Math.abs(c - center);
+        if (d < bestDist) { bestDist = d; best = i; }
+      });
+      return best;
+    }
+
+    function scrollToIndex(i) {
+      const slide = slides[i];
+      if (!slide) return;
+      proofTrack.scrollTo({
+        left: slide.offsetLeft - proofTrack.offsetLeft,
+        behavior: 'smooth'
+      });
+    }
+
+    function update() {
+      const cur = currentIndex();
+      dots.forEach((d, i) => d.classList.toggle('active', i === cur));
+      if (prevBtn) prevBtn.disabled = cur === 0;
+      if (nextBtn) nextBtn.disabled = cur === slides.length - 1;
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => scrollToIndex(Math.max(0, currentIndex() - 1)));
+    if (nextBtn) nextBtn.addEventListener('click', () => scrollToIndex(Math.min(slides.length - 1, currentIndex() + 1)));
+    dots.forEach((d, i) => d.addEventListener('click', () => scrollToIndex(i)));
+
+    let scrollTimer;
+    proofTrack.addEventListener('scroll', () => {
+      clearTimeout(scrollTimer);
+      scrollTimer = setTimeout(update, 80);
+    }, { passive: true });
+
+    update();
+  }
 })();
